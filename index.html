@@ -52,14 +52,11 @@
 
     <h4>I look forward to hearing from you!</h4>
 
-    <form action='https://formspree.io/danny.s.seng@gmail.com' method='post'>
-      <label>Name</label>
-      <input name='name' type='text'/>
-      <label>Email</label>
-      <input name='email' type='email' required/>
-      <label for='name'>Message</label>
-      <textarea name='message' required></textarea>
-      <input type='submit' value='Send Message'>
+    <form action="https://formspree.io/danny.s.seng@gmail.com" method="POST">
+      Name<input type='text' name='name' required>
+      Email<input type='email' name='_replyto' required>
+      Message<textarea name = 'message' required></textarea>
+      <input type='submit' value='Send'>
     </form>
 
   </main>
