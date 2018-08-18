@@ -34,7 +34,7 @@ div.countup {
 }
 
 div.countup p {
-  display: inline-block;
+  display: inline;
   color: #993333;
 }
 
