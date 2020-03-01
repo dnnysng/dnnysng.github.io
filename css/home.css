@@ -1,0 +1,67 @@
+@import "header.css";
+@import "reset.css";
+@import "main.css";
+
+/*
+#131313 - Black
+#333333 - Dark Gray
+#D9704A - Orange
+#3DE0F2 - Light Blue
+#EEECEB - Light Gray
+#FDFDFD - White
+*/
+
+body {
+    font-family: 'Alata', sans-serif;
+    background-color: #fdfdfd;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('../images/my-workspace.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    padding-top: 20px;
+}
+
+#hero .text-nav {
+    margin: 250px 50px 0px 200px;
+}
+
+#hero h2 {
+    color: #FDFDFD;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+#hero a {
+    color: #F24C3D;
+}
+
+#hero a:hover {
+    color: #3DE0F2;
+    position: relative;
+    left: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #hero .text-nav {
+        margin: 170px 50px 0px 40px;
+    }
+
+    #hero h2 {
+        color: #FDFDFD;
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #F24C3D;
+    }
+
+    a:hover {
+        color: #3DE0F2;
+    }
+
+}

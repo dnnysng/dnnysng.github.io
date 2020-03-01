@@ -1,0 +1,61 @@
+@import "reset.css";
+@import "header.css";
+@import "main.css";
+
+/*
+0D0D0D - Black
+333333 - Dark Gray
+F24141 - Red
+D9704A - Orange
+41F2F2 - Light Blue
+EEECEB - Light Gray
+F2F2F2 - White
+*/
+
+.container {
+    background-color: #F2F2F2;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #EEECEB;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #D9704A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1em;
+    border-radius: 10px;
+}
+  
+input[type=submit]:hover {
+    background-color: #41F2F2;
+    color: #0D0D0D;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+}
