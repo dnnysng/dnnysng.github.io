@@ -44,6 +44,8 @@ F2F2F2 - White
     position: relative;
     top: 30px;
     text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .p-one a:hover, .p-two a:hover, .p-three a:hover, .p-four a:hover {
