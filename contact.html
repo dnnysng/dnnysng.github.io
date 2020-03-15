@@ -20,20 +20,19 @@
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html" class="active">Contact</a>
-        </a>
     </div>
     <section id="contact">
 
         <div class="container">
         <form name="htmlform" method="post" action="form-send.php">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name..">
+            <input type="text" name="name" placeholder="Your name..">
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email..">
+            <input type="email" name="email" placeholder="Your email..">
 
-            <label for="comments">Message</label>
-            <textarea id="subject" name="comments" placeholder="Write message.." style="height:200px"></textarea>
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Write message.." style="height:200px"></textarea>
 
             <input type="submit" value="Send Message">
         </form>
