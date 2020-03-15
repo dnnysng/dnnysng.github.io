@@ -25,15 +25,15 @@
     <section id="contact">
 
         <div class="container">
-        <form action="php/form.php">
+        <form name="htmlform" method="post" action="form-send.php">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name..">
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Your email..">
 
-            <label for="message">Subject</label>
-            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="comments">Message</label>
+            <textarea id="subject" name="comments" placeholder="Write message.." style="height:200px"></textarea>
 
             <input type="submit" value="Send Message">
         </form>
