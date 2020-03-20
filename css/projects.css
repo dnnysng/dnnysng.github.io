@@ -82,13 +82,13 @@ F2F2F2 - White
 
 #projects .project-section .p-three {
     background-color: #403C3A;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('../images/es-logo-bg.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('../images/landing-page.jpg');
     background-size: cover;
     background-position: center;
 }
 
     #projects .project-section .p-three:hover {
-        background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url('../images/es-logo-bg.png');
+        background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url('../images/landing-page.jpg');
         background-size: cover;
         background-position: center;
     }
