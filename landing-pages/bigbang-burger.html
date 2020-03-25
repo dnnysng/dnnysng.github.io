@@ -21,14 +21,78 @@
                 <h2>AND IT'S FREE!</h2>
                 <p>You'll also leave here with a shiny new t-shirt!</p>
                 <hr>
-                <p>Ready for the challenge? Simply click the button below to sign up and get added to the list of challengers.</p>
-                <button class="cta" href="#">SIGN UP TODAY</button>
+                <p>Ready for the challenge? Simply click the button below and sign up to be added to the list of challengers!</p>
+                <button id="cta">SIGN UP TODAY!</button>
             </div>
+
+            <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Can you beat the burger?</h2>
+                <p>Lets see if you've got what it takes..</p>
+                <div id="form">
+                    <form action="#">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                      <label for="email"><b>Email</b></label>
+                      <input type="email" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="country">Shirt Size</label>
+                      <select id="country" name="country" required>
+                        <option value="Extra Small">XS</option>
+                        <option value="Small">S</option>
+                        <option value="Medium">M</option>
+                        <option value="Large">L</option>
+                        <option value="Extra Large">XL</option>
+                        <option value="Extra Extra Large">XXL</option>
+                        <option value="Extra Extra Extra Large">XXXL</option>
+                      </select>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
+            </div>
+  
+  </div>
         </div>
         <div class="footer">
             <h3>5 Burger Lane, Shibuya, Tokyo | 555-5555-5555</h3>
             <p>We at Big Bang Burger are not responsible for any health issues that may occur as a result of this challenge. You attempt this challenge at your own risk. Be aware, the Cosmo Tower Burger is huge and packs enough calories to feed a large famly. You have been warned! Good luck!</p>
         </div>
     </section>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("cta");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
 </body>
 </html>
