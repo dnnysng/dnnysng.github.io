@@ -1,56 +1,311 @@
-@import "reset.css";
-
-/*
-0D0D0D - Black
-333333 - Dark Gray
-F24141 - Red
-D9704A - Orange
-41F2F2 - Light Blue
-EEECEB - Light Gray
-F2F2F2 - White
-*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    font-family: 'Alata', sans-serif;
-    background-color: #F2F2F2;
+  margin: 0;
+  font-family: "Alata", sans-serif;
 }
 
-footer {
-    background-color: #0D0D0D;
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/workspace-with-gradient-overlay.jpg");
+  background-position: right;
+  background-size: cover;
+  z-index: -1;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: #7135f2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+}
+
+p {
+  color: #131313;
+}
+
+.link {
+  transition: 0.3s all ease-in-out;
+}
+
+.link:hover {
+  color: #0bd9d9;
+}
+
+.linkCard {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  filter: drop-shadow(5px 5px 0px #7135f2);
+  background: black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+.linkCard .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+.linkCard .left .fa-laptop,
+.linkCard .left .fa-github {
+  width: 1.5rem;
+}
+.linkCard .right {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.linkCard:hover {
+  filter: drop-shadow(5px 5px 0px #0bd9d9);
+}
+
+.cta {
+  padding: 10px 20px;
+  background: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+#hero {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: -70;
+}
+#hero .logoContainer .logoInitials {
+  font-size: 2.9rem;
+  color: #fdfdfd;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+#hero h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #fdfdfd;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#hero .cta {
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 15px 0px;
+  background: black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  width: 280px;
+}
+
+.projects {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ededed;
+  background: linear-gradient(135deg, #ededed 44%, #c2c2c2 100%);
+  overflow: hidden;
+}
+.projects .intro h1 {
+  color: #7135f2;
+  font-size: 1.8rem;
+}
+.projects .project {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+.projects .project h1 {
+  color: #7135f2;
+  font-size: 2.1rem;
+}
+.projects .project h2 {
+  margin-bottom: -1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.projects .project h3 {
+  text-transform: uppercase;
+}
+.projects .project p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.projects .project img {
+  max-width: 150vw;
+  position: relative;
+  left: -35;
+  filter: drop-shadow(0px 20px 15px #333333);
+}
+.projects .project .projectInfo {
+  margin: 0 auto;
+}
+.projects .project .projectButtons {
+  display: flex;
+}
+
+#contact {
+  min-height: 600px;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h1 {
+  color: #fdfdfd;
+}
+#contact .formContainer {
+  background: #ededed;
+  background: linear-gradient(135deg, #ededed 44%, #c2c2c2 100%);
+  border-radius: 5px;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: left;
+}
+#contact .formContainer input[type=text],
+#contact .formContainer input[type=email],
+#contact .formContainer textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eeeceb;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Alata", sans-serif;
+}
+#contact .formContainer input[type=submit] {
+  background-color: #7135f2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 10px;
+  font-family: "Alata", sans-serif;
+  transition: 0.3s all ease-in-out;
+}
+#contact .formContainer input[type=submit]:hover {
+  background-color: #0bd9d9;
+}
+#contact .formContainer h1 {
+  padding-top: 20px;
+}
+
+#footer {
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+#footer p {
+  color: #fdfdfd;
+  font-size: 0.8rem;
+}
+#footer .footerRight {
+  text-align: right;
+}
+#footer .footerRight ul {
+  list-style: none;
+  display: flex;
+}
+#footer .footerRight ul li {
+  margin-left: 1rem;
+}
+#footer .footerRight ul li a {
+  font-size: 1.6rem;
+  color: #fdfdfd;
+  transition: 0.3s all ease-in-out;
+}
+#footer .footerRight ul li a:hover {
+  color: #0bd9d9;
+}
+
+@media only screen and (min-width: 650px) {
+  .intro h1 {
+    color: #7135f2;
+    font-size: 2.4rem;
+  }
+  .intro p {
+    font-size: 1.4rem;
+  }
+
+  #projects {
+    padding: 1rem 10%;
+  }
+  #projects .projectThumbnail {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+  }
+  #projects .projectThumbnail img {
+    width: 80%;
+    left: 0;
+  }
+  #projects .projectInfo {
+    max-width: 800px;
+  }
+  #projects .projectInfo h2 {
+    font-size: 2rem;
+  }
+  #projects .projectInfo h3 {
+    font-size: 1.5rem;
+  }
+  #projects .projectInfo p {
+    font-size: 1.4rem;
+  }
+  #projects .projectInfo .projectButtons sub {
+    font-size: 1.3rem;
+  }
+  #projects .projectInfo .projectButtons .linkCard {
+    filter: drop-shadow(10px 10px 0px #7135f2);
+    margin-right: 2rem;
+  }
+  #projects .projectInfo .projectButtons .linkCard:hover {
+    filter: drop-shadow(10px 10px 0px #0bd9d9);
+    margin-right: 2rem;
+  }
+  #projects .projectInfo .projectButtons .left {
+    font-size: 2rem;
+    width: 50px;
+  }
+
+  #footer {
+    padding: 1rem 3rem;
+  }
 }
 
-footer p {
-    font-size: 15px;
-    color: #F2F2F2;
-    padding: 10px 0px;
-}
-
-footer p:hover {
-    color: #41F2F2;
-}
-
-footer ul {
-    background-color: #333333;
-    display: block;
-}
-
-footer li {
-    display: inline-block;
-}
-
-footer li:hover {
-    background-color: #41F2F2;
-}
-
-footer a {
-    display: inline-block;
-    color: #F2F2F2;
-    font-size: 1.5em;
-    padding: 20px;
-}
-
-footer a:hover {
-    color: #131313;
-}
+/*# sourceMappingURL=main.css.map */

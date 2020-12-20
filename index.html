@@ -1,31 +1,266 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="Danny Seng's Portfolio">
-    <meta property="og:description" content="A collection of recent Frontend Web &amp; Graphics work.">
-    <meta property="og:image" content="https://www.dannyseng.com/images/my-workspace.png">
-    <meta property="og:url" content="https://www.dannyseng.com/">
-    <meta name="twitter:card" content="summary_large_image">
+  <head>
+    <meta charset="UTF-8" />
     <title>Danny Seng's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <script src="https://kit.fontawesome.com/b9a2ff1cf8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <a href="index.html" class="header">
-        <header>
-            <h1>Danny Seng</h1>
-            <h2>Frontend Web / Graphics</h2>
-        </header>
-    </a>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="Developer, HTML, CSS, JavaScript, GSAP, Website, Animation, Developer"
+    />
+    <meta name="author" content="Danny Seng" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta property="og:title" content="Danny Seng: Frontend Web Developer" />
+    <meta
+      property="og:description"
+      content="I love to build with code and make things look nice. I'm fortunate that my skills can benefit businesses at the same time. This portfolio is a collection of my recent work."
+    />
+    <!-- 1200px x 630px recommended -->
+    <meta
+      property="og:image"
+      content="https://i.imgur.com/XDmUbe7.png"
+    />
+    <meta property="og:url" content="https://www.dannyseng.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script
+      src="https://kit.fontawesome.com/b9a2ff1cf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section id="background"></section>
+
     <section id="hero">
-        <div class="text-nav">
-            <a href="about.html"><h2>about</h2></a>
-            <a href="projects.html"><h2>projects</h2></a>
-            <a href="contact.html"><h2>contact</h2></a>
-        </div>
+      <div class="logoContainer">
+        <h2 class="logoInitials">Danny Seng</h2>
+      </div>
+      <div class="bigText">
+        <h1>Frontend Web Developer</h1>
+      </div>
+      <a href="#projects" class="cta">View Projects</a>
     </section>
-</body>
+
+    <section id="projects" class="projects">
+      <div class="projectInfo intro">
+        <h1>Projects keep me busy.</h1>
+        <p>
+          I love to build with code and make things look nice. I'm fortunate
+          that my skills can benefit businesses at the same time.
+        </p>
+        <p>
+          I'm currently open to new opportunities so
+          <a href="#contact" class="link" style="text-decoration: underline"
+            >feel free to get in touch...</a
+          >
+        </p>
+      </div>
+      <div class="project">
+        <div class="projectContainer">
+          <div class="projectThumbnail esThumb">
+            <img
+              src="./images/es_laptop_mockup.png"
+              alt="es project thumbnail"
+            />
+          </div>
+          <div class="projectInfo esInfo">
+            <h2>E&S Academy</h2>
+            <h3>Wordpress Website</h3>
+            <p>
+              An important point of contact for both potential students and
+              future employees. My task was to build a web experience that let
+              users know what the school had to offer.
+            </p>
+            <div class="projectButtons">
+              <a
+                href="https://esacademy-usa.com/"
+                class="projectLinks"
+                target="_blank"
+              >
+                <div class="linkCard">
+                  <div class="left">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  <div class="right">
+                    <sub>View Live</sub>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/dnnysng/esacademy"
+                class="projectLinks"
+                target="_blank"
+              >
+                <div class="linkCard">
+                  <div class="left">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="right">
+                    <sub>View Code</sub>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="projectThumbnail ccThumb">
+          <img
+            src="./images/codecarnivore-mockup.png"
+            alt="codecarnivore project mockup"
+          />
+        </div>
+        <div class="projectInfo ccInfo">
+          <h2>CODECARNIVORE</h2>
+          <h3>niche website</h3>
+          <p>
+            A hub for developers who not only excel at code, but want to look
+            the part. My job was to build a web experience that would match that
+            aesthetic while displaying products for sale.
+          </p>
+          <div class="projectButtons">
+            <a
+              href="https://codecarnivore.com/"
+              class="projectLinks"
+              target="_blank"
+            >
+              <div class="linkCard">
+                <div class="left">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <div class="right">
+                  <sub>View Live</sub>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://github.com/dnnysng/codecarnivore.com"
+              class="projectLinks"
+              target="_blank"
+            >
+              <div class="linkCard">
+                <div class="left">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="right">
+                  <sub>View Code</sub>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="projectThumbnail psThumb">
+          <img
+            src="./images/ps_laptop_mockup.png"
+            alt="playsation 5 countdown project mockup"
+          />
+        </div>
+        <div class="projectInfo psInfo">
+          <h2>PS5 Countdown</h2>
+          <h3>Promotional Page</h3>
+          <p>
+            I couldn't get my hands on a preorder, but that didn't stop me from
+            bringing the hype. This promo page features the DualSense controller
+            with a timer counting down to the official release date.
+          </p>
+          <div class="projectButtons">
+            <a
+              href="https://dnnysng.github.io/playstation-countdown"
+              class="projectLinks"
+              target="_blank"
+            >
+              <div class="linkCard">
+                <div class="left">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <div class="right">
+                  <sub>View Demo</sub>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://github.com/dnnysng/playstation-countdown"
+              class="projectLinks"
+              target="_blank"
+            >
+              <div class="linkCard">
+                <div class="left">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="right">
+                  <sub>View Code</sub>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>I'm easy to reach.</h1>
+      <div class="formContainer">
+        <form name="contact" method="post" data-netlify="true">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Your name.." />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your email.." />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            placeholder="Write message.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <p>Thanks for viewing my portfolio, I hope to hear from you soon.</p>
+      <div class="footerRight">
+        <ul>
+          <li>
+            <a href="https://github.com/dnnysng" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/dnnysng/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dnnysng" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dannyseng/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+        <p>&copy; 2020 DANNY SENG</p>
+      </div>
+    </section>
+
+    <script src="../gsap-shockingly-green/esm/CustomEase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="js/hero.js"></script>
+  </body>
 </html>
