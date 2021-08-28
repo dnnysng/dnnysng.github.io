@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Quick Trailers",
+        "type": "React Web Application",
+        "description": "This react web application is connected to The Movie Database API and provides users with quick access to movie trailers by name. Results are displayed in a grid with the movie title and rating at a glance.",
+        "mockup": "./images/quicktrailers-mockup.png",
+        "live": "https://thirsty-boyd-4fd3cf.netlify.app/",
+        "code": "https://github.com/dnnysng/quick-trailers"
+    },
+    {
+        "title": "Virtual Learning",
+        "type": "Wordpress Website",
+        "description": "I learned a lot during this project and was the lead in both design and development. Main features include a learning management system, a group dashboard, Woocommerce & CRM integration.",
+        "mockup": "./images/vl_laptop_mockup.png",
+        "live": "https://virtuallearnonline.com",
+        "code": "https://codepen.io/dnnysng/pen/zYwpgpL"
+    },
+    {
+        "title": "PS5 Countdown",
+        "type": "Promotional Page",
+        "description": "I couldn't get my hands on a preorder, but that didn't stop me from bringing the hype. This promo page features the DualSense controller with a timer counting down to the official release date.",
+        "mockup": "./images/ps_laptop_mockup.png",
+        "live": "https://dnnysng.github.io/playstation-countdown",
+        "code": "https://github.com/dnnysng/playstation-countdown"
+    }
+]
