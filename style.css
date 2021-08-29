@@ -89,7 +89,7 @@ p {
 }
 
 #projects {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .project {
@@ -166,7 +166,7 @@ p {
 }
 
 #contact {
-    min-height: 90vh;
+    height: 85vh;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -232,7 +232,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    min-height: 10vh;
+    height: 15vh;
 }
 
 #footer p {
