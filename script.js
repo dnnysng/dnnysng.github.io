@@ -26,7 +26,6 @@ tl.to(".hero--cta", {
 });
 
 // projects
-
 const fillProjects = async () => {
 
     const response = await fetch('./projects.json')
@@ -56,3 +55,7 @@ const fillProjects = async () => {
 }
 
 fillProjects();
+
+// update year
+const currYear = new Date().getFullYear()
+document.getElementById('year').innerHTML = currYear
