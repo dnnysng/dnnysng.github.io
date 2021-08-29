@@ -9,8 +9,8 @@ tl.from(".dev", {
 // button to aqua
 tl.to(".hero--cta", {
     y: 100,
-    background: 'aqua',
-    filter: 'drop-shadow(0px 0px 4px aqua)',
+    background: '#0bd9d9',
+    filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
     duration: .5,
     delay: -1.6,
     ease: "power4"
@@ -19,7 +19,7 @@ tl.to(".hero--cta", {
 tl.to(".hero--cta", {
     y: 0,
     background: 'black',
-    border: '2px solid aqua',
+    border: '2px solid #0bd9d9',
     duration: 1.25,
     ease: "bounce.out",
     delay: -1.15
