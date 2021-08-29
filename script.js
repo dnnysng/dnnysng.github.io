@@ -50,8 +50,8 @@ const fillProjects = async () => {
                         <h2 class="project--title">${project.title}</h2>
                         <h3 class="project--type">${project.type}</h3>
                         <p class="project--description">${project.description}</p>
-                        <a href=${project.live} class="project--button" target="_blank">View Live</a>
-                        <a href=${project.code} class="project--button" target="_blank">Sample Code</a>
+                        <a href=${project.live} class="project--button" rel="noreferrer noopener" target="_blank">View Live</a>
+                        <a href=${project.code} class="project--button" rel="noreferrer noopener" target="_blank">Sample Code</a>
                         </div>
                 </div>
             `
