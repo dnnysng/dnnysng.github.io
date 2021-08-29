@@ -55,6 +55,7 @@ p {
 
 .dev {
     margin-top: -30px;
+    transform: translate(0, -500px);
 }
 
 .dev--name {

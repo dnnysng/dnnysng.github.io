@@ -1,29 +1,33 @@
-// hero animation
-var tl = gsap.timeline({ repeat: 0 });
-// logo and text come down from top
-tl.from(".dev", {
-    y: -500,
-    duration: 2.5,
-    ease: "bounce"
-});
-// button to aqua
-tl.to(".hero--cta", {
-    y: 100,
-    background: '#0bd9d9',
-    filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
-    duration: .5,
-    delay: -1.6,
-    ease: "power4"
-});
-// button to black
-tl.to(".hero--cta", {
-    y: 0,
-    background: 'black',
-    border: '2px solid #0bd9d9',
-    duration: 1.25,
-    ease: "bounce.out",
-    delay: -1.15
-});
+const heroAnimation = () => {
+    // hero animation
+    var tl = gsap.timeline({ repeat: 0 });
+    // logo and text come down from top
+    tl.to(".dev", {
+        y: 5,
+        duration: 2.5,
+        ease: "bounce"
+    });
+    // button to aqua
+    tl.to(".hero--cta", {
+        y: 100,
+        background: '#0bd9d9',
+        filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
+        duration: .5,
+        delay: -1.6,
+        ease: "power4"
+    });
+    // button to black
+    tl.to(".hero--cta", {
+        y: 0,
+        background: 'black',
+        border: '2px solid #0bd9d9',
+        duration: 1.25,
+        ease: "bounce.out",
+        delay: -1.15
+    });
+}
+
+setTimeout(heroAnimation, 500)
 
 // projects
 const fillProjects = async () => {
