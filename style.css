@@ -15,10 +15,16 @@ html {
     } */
 }
 
-body {
+#background {
     margin: 0;
     font-family: "Alata", sans-serif;
     font-size: 10px;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/textured-gradient-bg.png");
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
 }
 
 a {
@@ -39,18 +45,6 @@ h4 {
 
 p {
     color: #131313;
-}
-
-#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: url("../images/textured-gradient-bg.png");
-    background-position: center center;
-    background-size: cover;
-    z-index: -1;
 }
 
 #hero {
@@ -158,7 +152,7 @@ p {
     .project {
         flex-direction: row;
     }
-    .project:nth-child(even) {
+    .project:nth-child(odd) {
         flex-direction: row-reverse;
         background: #ddd;
     }

@@ -27,8 +27,6 @@ const heroAnimation = () => {
     });
 }
 
-setTimeout(heroAnimation, 500)
-
 // projects
 const fillProjects = async () => {
 
@@ -55,16 +53,14 @@ const fillProjects = async () => {
         </div>
     `)
     })
-}
 
-fillProjects();
+}
 
 // update year
 const currYear = new Date().getFullYear()
 document.getElementById('year').innerHTML = currYear
 
-const desktopView = window.matchMedia("(min-width: 710px)")
-
+// project animations
 const projectAnimation = () => {
 
     const projects = ["#project0", "#project1", "#project2"]
@@ -79,7 +75,7 @@ const projectAnimation = () => {
 
         t2.from(project + " img", {
             duration: 2.5,
-            x: (desktopView.matches ? (index === 1 ? 800 : -800) : -800),
+            x: index === 1 ? 800 : -800,
             ease: "bounce.out"
         });
 
@@ -102,3 +98,16 @@ const projectAnimation = () => {
     })
 
 }
+
+// background animated
+const backgroundAnimation = () => {
+    let background = new TimelineMax({ repeat: -1 });
+    background.to("#background", 120, {
+        backgroundPosition: "-2560px 0px",
+        autoRound: true,
+        ease: Linear.easeNone
+    });
+}
+
+setTimeout(heroAnimation, 500)
+fillProjects()

@@ -76,8 +76,8 @@
         />
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body onload="projectAnimation()">
-        <section id="background"></section>
+    <body id="background" onload="backgroundAnimation(), projectAnimation()">
+        <!-- <section id="background"></section> -->
         <section id="hero">
             <div class="dev">
                 <h1 class="dev--name">Danny Seng</h1>
@@ -100,7 +100,7 @@
                     name="message"
                     placeholder="Write message.."
                 ></textarea>
-                <input type="submit" value="Send Message" />
+                <input class="submit" type="submit" value="Send Message" />
             </form>
         </section>
 
