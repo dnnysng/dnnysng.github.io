@@ -4,6 +4,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 body {
@@ -51,6 +53,7 @@ p {
     align-items: center;
     height: 100vh;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 .dev {
@@ -88,10 +91,6 @@ p {
     background: #0bd9d9 !important;
 }
 
-#projects {
-    overflow-x: hidden;
-}
-
 .project {
     overflow: hidden;
     display: flex;
@@ -101,6 +100,7 @@ p {
     min-height: 100vh;
     background: #ededed;
     background: linear-gradient(135deg, #ededed 44%, #c2c2c2 100%);
+    scroll-snap-align: start;
 }
 
 .project--mockup {
@@ -172,6 +172,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .contact--title {

@@ -35,26 +35,25 @@ const fillProjects = async () => {
     const response = await fetch('./projects.json')
     const data = await response.json()
 
-    const projectSection = document.getElementById('projects')
+    const contactSection = document.getElementById('contact')
 
-    data.map(project => {
-        projectSection.innerHTML +=
-            `
-                <div class="project">
-                        <img
-                        src="${project.mockup}"
-                        alt="${project.title} project mockup"
-                        class="project--mockup"
-                        />
-                        <div class="project--details">
-                        <h2 class="project--title">${project.title}</h2>
-                        <h3 class="project--type">${project.type}</h3>
-                        <p class="project--description">${project.description}</p>
-                        <a href=${project.live} class="project--button" rel="noreferrer noopener" target="_blank">View Live</a>
-                        <a href=${project.code} class="project--button" rel="noreferrer noopener" target="_blank">Sample Code</a>
-                        </div>
+    data.map((project, index) => {
+        contactSection.insertAdjacentHTML('beforebegin', `
+        <div ${index === 0 && 'id=first-project'} class="project pin-layer">
+                <img
+                src="${project.mockup}"
+                alt="${project.title} project mockup"
+                class="project--mockup"
+                />
+                <div class="project--details">
+                <h2 class="project--title">${project.title}</h2>
+                <h3 class="project--type">${project.type}</h3>
+                <p class="project--description">${project.description}</p>
+                <a href=${project.live} class="project--button" rel="noreferrer noopener" target="_blank">View Live</a>
+                <a href=${project.code} class="project--button" rel="noreferrer noopener" target="_blank">Sample Code</a>
                 </div>
-            `
+        </div>
+    `)
     })
 }
 
