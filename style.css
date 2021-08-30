@@ -4,8 +4,14 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+}
+
+@media (min-width: 710px) {
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-snap-stop: always;
+        overflow-y: scroll;
+    }
 }
 
 body {
