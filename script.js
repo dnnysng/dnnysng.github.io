@@ -9,7 +9,7 @@ const heroAnimation = () => {
     });
     // button to aqua
     tl.to(".hero--cta", {
-        y: 100,
+        y: 200,
         background: '#0bd9d9',
         filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
         duration: .5,
@@ -39,7 +39,7 @@ const fillProjects = async () => {
 
     data.map((project, index) => {
         contactSection.insertAdjacentHTML('beforebegin', `
-        <div ${index === 0 && 'id=first-project'} class="project pin-layer">
+        <div id=${'project' + index} class="project">
                 <img
                 src="${project.mockup}"
                 alt="${project.title} project mockup"
@@ -62,3 +62,43 @@ fillProjects();
 // update year
 const currYear = new Date().getFullYear()
 document.getElementById('year').innerHTML = currYear
+
+const desktopView = window.matchMedia("(min-width: 710px)")
+
+const projectAnimation = () => {
+
+    const projects = ["#project0", "#project1", "#project2"]
+
+    projects.map((project, index) => {
+        var t2 = gsap.timeline({
+            repeat: 0, scrollTrigger: {
+                trigger: project,
+                start: "top center",
+            },
+        });
+
+        t2.from(project + " img", {
+            duration: 2.5,
+            x: (desktopView.matches ? (index === 1 ? 800 : -800) : -800),
+            ease: "bounce.out"
+        });
+
+        t2.to(project + " .project--details .project--button", {
+            background: '#0bd9d9',
+            filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
+            duration: 1,
+            ease: "elastic",
+            delay: -1.6
+        });
+
+        t2.to(project + " .project--details .project--button", {
+            background: 'black',
+            border: '1px solid #0bd9d9',
+            duration: .8,
+            ease: "elastic",
+            delay: -.8
+        });
+
+    })
+
+}
