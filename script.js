@@ -1,14 +1,14 @@
 const heroAnimation = () => {
     // hero animation
-    var tl = gsap.timeline({ repeat: 0 });
+    let heroTimeline = gsap.timeline({ repeat: 0 });
     // logo and text come down from top
-    tl.to(".dev", {
+    heroTimeline.to(".dev", {
         y: 5,
         duration: 2.5,
         ease: "bounce"
     });
     // button to aqua
-    tl.to(".hero--cta", {
+    heroTimeline.to(".hero--cta", {
         y: 200,
         background: '#0bd9d9',
         filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
@@ -17,7 +17,7 @@ const heroAnimation = () => {
         ease: "power4"
     });
     // button to black
-    tl.to(".hero--cta", {
+    heroTimeline.to(".hero--cta", {
         y: 0,
         background: 'black',
         border: '2px solid #0bd9d9',
@@ -66,20 +66,20 @@ const projectAnimation = () => {
     const projects = ["#project0", "#project1", "#project2"]
 
     projects.map((project, index) => {
-        var t2 = gsap.timeline({
+        let projectTimeline = gsap.timeline({
             repeat: 0, scrollTrigger: {
                 trigger: project,
                 start: "top center",
             },
         });
 
-        t2.from(project + " img", {
+        projectTimeline.from(project + " img", {
             duration: 2.5,
             x: index === 1 ? 800 : -800,
             ease: "bounce.out"
         });
 
-        t2.to(project + " .project--details .project--button", {
+        projectTimeline.to(project + " .project--details .project--button", {
             background: '#0bd9d9',
             filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
             duration: 1,
@@ -87,7 +87,7 @@ const projectAnimation = () => {
             delay: -1.6
         });
 
-        t2.to(project + " .project--details .project--button", {
+        projectTimeline.to(project + " .project--details .project--button", {
             background: 'black',
             border: '1px solid #0bd9d9',
             duration: .8,
@@ -101,10 +101,13 @@ const projectAnimation = () => {
 
 // background animated
 const backgroundAnimation = () => {
-    let background = new TimelineMax({ repeat: -1 });
-    background.to("#background", 120, {
-        backgroundPosition: "-2560px 0px",
-        autoRound: true,
+    let backgroundTimeline = new TimelineMax({ repeat: -1 });
+    backgroundTimeline.to("#background", 50, {
+        backgroundPosition: "-1280px 0px",
+        ease: Linear.easeNone
+    });
+    backgroundTimeline.to("#background", 60, {
+        backgroundPosition: "0px 0px",
         ease: Linear.easeNone
     });
 }
