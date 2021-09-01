@@ -11,12 +11,6 @@ html {
     margin: 0;
     font-family: "Alata", sans-serif;
     font-size: 10px;
-    width: 100%;
-    height: 100vh;
-    background: url("./images/gradient-bg.png");
-    background-position: center center;
-    background-size: cover;
-    z-index: -1;
 }
 
 a {
@@ -37,6 +31,18 @@ h4 {
 
 p {
     color: #131313;
+}
+
+#bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/gradient-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 #hero {
