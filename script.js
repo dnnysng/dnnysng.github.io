@@ -60,41 +60,45 @@ const fillProjects = async () => {
 }
 
 // project animations
+const desktopVp = window.matchMedia('(min-width: 710px)')
+
 const projectAnimation = () => {
 
-    const projects = ["#project0", "#project1", "#project2"]
+    if (desktopVp.matches) {
+        const projects = ["#project0", "#project1", "#project2"]
 
-    projects.map((project, index) => {
-        let projectTimeline = gsap.timeline({
-            repeat: 0, scrollTrigger: {
-                trigger: project,
-                start: "top center",
-            },
-        });
+        projects.map((project, index) => {
+            let projectTimeline = gsap.timeline({
+                repeat: 0, scrollTrigger: {
+                    trigger: project,
+                    start: "top center",
+                },
+            });
 
-        projectTimeline.from(project + " img", {
-            duration: 2.5,
-            x: index === 1 ? 800 : -800,
-            ease: "bounce.out"
-        });
+            projectTimeline.from(project + " img", {
+                duration: 2.5,
+                x: index === 1 ? 800 : -800,
+                ease: "bounce.out"
+            });
 
-        projectTimeline.to(project + " .project--details .project--button", {
-            background: '#0bd9d9',
-            filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
-            duration: 1,
-            ease: "elastic",
-            delay: -1.6
-        });
+            projectTimeline.to(project + " .project--details .project--button", {
+                background: '#0bd9d9',
+                filter: 'drop-shadow(0px 0px 4px #0bd9d9)',
+                duration: 1,
+                ease: "elastic",
+                delay: -1.6
+            });
 
-        projectTimeline.to(project + " .project--details .project--button", {
-            background: 'black',
-            border: '1px solid #0bd9d9',
-            duration: .8,
-            ease: "elastic",
-            delay: -.8
-        });
+            projectTimeline.to(project + " .project--details .project--button", {
+                background: 'black',
+                border: '1px solid #0bd9d9',
+                duration: .8,
+                ease: "elastic",
+                delay: -.8
+            });
 
-    })
+        })
+    }
 
 }
 
