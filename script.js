@@ -1,3 +1,7 @@
+// update year
+const currYear = new Date().getFullYear()
+document.getElementById('year').innerHTML = currYear
+
 const heroAnimation = () => {
     // hero animation
     let heroTimeline = gsap.timeline({ repeat: 0 });
@@ -29,7 +33,6 @@ const heroAnimation = () => {
 
 // projects
 const fillProjects = async () => {
-
     const response = await fetch('./projects.json')
     const data = await response.json()
 
@@ -55,10 +58,6 @@ const fillProjects = async () => {
     })
 
 }
-
-// update year
-const currYear = new Date().getFullYear()
-document.getElementById('year').innerHTML = currYear
 
 // project animations
 const projectAnimation = () => {

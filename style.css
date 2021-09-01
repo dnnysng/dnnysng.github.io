@@ -150,7 +150,7 @@ p {
     .project {
         flex-direction: row;
     }
-    .project:nth-child(odd) {
+    .project:nth-child(even) {
         flex-direction: row-reverse;
         background: #ddd;
     }
