@@ -19,12 +19,12 @@ html {
     margin: 0;
     font-family: "Alata", sans-serif;
     font-size: 10px;
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     background: url("../images/textured-gradient-bg.png");
     background-position: center center;
     background-size: cover;
-    z-index: -1;
+    z-index: -1; */
 }
 
 a {
@@ -45,6 +45,33 @@ h4 {
 
 p {
     color: #131313;
+}
+
+#container {
+    overflow: hidden;
+}
+
+.sliding-background {
+    background: url("./images/long-bg-gradient.png") repeat-x;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 1080px;
+    width: 2560px;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-1080px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0px, 0, 0);
+    }
 }
 
 #hero {

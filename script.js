@@ -99,18 +99,5 @@ const projectAnimation = () => {
 
 }
 
-// background animated
-const backgroundAnimation = () => {
-    let backgroundTimeline = new TimelineMax({ repeat: -1 });
-    backgroundTimeline.to("#background", 50, {
-        backgroundPosition: "-1280px 0px",
-        ease: Linear.easeNone
-    });
-    backgroundTimeline.to("#background", 60, {
-        backgroundPosition: "0px 0px",
-        ease: Linear.easeNone
-    });
-}
-
 setTimeout(heroAnimation, 500)
 fillProjects()
